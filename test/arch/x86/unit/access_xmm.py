@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#! /usr/bin/env python2
 """Test getter and setter for XMM registers (128 bits)"""
 
 from miasm.analysis.machine import Machine
