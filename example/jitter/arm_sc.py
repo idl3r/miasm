@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 #-*- coding:utf-8 -*-
 from miasm.core.utils import int_to_byte
 from miasm.analysis.sandbox import Sandbox_Linux_armb_str

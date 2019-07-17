@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 """This script is just a short example of common usages for miasm.core.types.
 For a more complete view of what is possible, tests/core/types.py covers
 most of the module possibilities, and the module doc gives useful information
