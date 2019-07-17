@@ -1,7 +1,7 @@
 # Toshiba MeP-c4 - unit tests helpers
 # Guillaume Valadon <guillaume@valadon.net>
 
-from __future__ import print_function
+
 
 from miasm.arch.mep.arch import mn_mep
 from miasm.arch.mep.sem import ir_mepb

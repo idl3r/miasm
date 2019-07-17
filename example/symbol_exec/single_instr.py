@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 # Minimalist Symbol Exec example
 from miasm.analysis.binary import Container
 from miasm.analysis.machine import Machine

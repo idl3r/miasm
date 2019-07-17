@@ -4,7 +4,7 @@ For a more complete view of what is possible, tests/core/types.py covers
 most of the module possibilities, and the module doc gives useful information
 as well.
 """
-from __future__ import print_function
+
 
 from miasm.core.utils import iterbytes
 from miasm.analysis.machine import Machine
@@ -103,7 +103,7 @@ class LinkedList(MemStruct):
             return None
 
         node = self.get_head()
-        self.head = node.next
+        self.head = node.__next__
 
         # empty
         if self.head == 0:

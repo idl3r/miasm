@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 import ida_kernwin
 import idc
 import ida_funcs

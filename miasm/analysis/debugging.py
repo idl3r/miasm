@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 from builtins import map
 from builtins import range
 import cmd
@@ -266,7 +266,7 @@ class DebugCmd(cmd.Cmd, object):
         # Display settings
         title1 = "Registers"
         title2 = "Values"
-        max_name_len = max(map(len, list(regs) + [title1]))
+        max_name_len = max(list(map(len, list(regs) + [title1])))
 
         # Print value table
         s = "%s%s    |    %s" % (

@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-from __future__ import print_function
+
 from builtins import range, str
 from collections import defaultdict
 import logging

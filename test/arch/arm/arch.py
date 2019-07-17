@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 import time
 
 from miasm.core.utils import decode_hex, encode_hex

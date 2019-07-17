@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 import sys
 from miasm.analysis.binary import Container
 from miasm.analysis.machine import Machine
