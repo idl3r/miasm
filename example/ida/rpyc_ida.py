@@ -1,5 +1,5 @@
 """rpyc IDA server"""
-
+from __future__ import print_function
 
 from rpyc.utils.server import OneShotServer
 from rpyc.core import SlaveService

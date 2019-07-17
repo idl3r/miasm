@@ -1,5 +1,5 @@
 #! /usr/bin/env python2
-
+from __future__ import print_function
 import sys
 
 from miasm.os_dep.win_api_x86_32_seh import fake_seh_handler, build_teb, \

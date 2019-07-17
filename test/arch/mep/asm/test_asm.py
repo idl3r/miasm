@@ -1,7 +1,7 @@
 # Toshiba MeP-c4 - Misc unit tests
 # Guillaume Valadon <guillaume@valadon.net>
 
-
+from __future__ import print_function
 from miasm.core.utils import decode_hex, encode_hex
 from miasm.arch.mep.arch import mn_mep
 

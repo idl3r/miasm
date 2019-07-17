@@ -1,4 +1,4 @@
-
+from __future__ import print_function
 from miasm.core.graph import *
 
 g = DiGraph()

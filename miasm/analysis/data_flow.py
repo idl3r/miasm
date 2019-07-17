@@ -1326,7 +1326,7 @@ class DiGraphLiveness(DiGraph):
         """
         infos = block.infos
         modified = False
-        for i in reversed(list(range(len(infos)))):
+        for i in reversed(range(len(infos))):
             new_vars = set(infos[i].gen.union(infos[i].var_out.difference(infos[i].kill)))
             if infos[i].var_in != new_vars:
                 modified = True

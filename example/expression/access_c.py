@@ -39,7 +39,7 @@ Then, in the C generator:
 ExprCompose(var1, 0) => var1
 
 """
-
+from __future__ import print_function
 
 import sys
 

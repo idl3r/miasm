@@ -4,7 +4,7 @@ This example should run on the compiled ELF x86 64bits version of
 "dse_crackme.c"
 
 """
-
+from __future__ import print_function
 
 #### This part is only related to the run of the sample, without DSE ####
 from builtins import range

@@ -136,10 +136,10 @@ def get_fmt_args(fmt, cur_arg, get_str, get_arg_n):
         char_string = b's'
         output = b""
     else:
-        chars_format = '%cdfsuxX'
-        char_percent = '%'
-        char_string = 's'
-        output = ""
+        chars_format = u'%cdfsuxX'
+        char_percent = u'%'
+        char_string = u's'
+        output = u""
 
     while True:
         if idx == len(fmt):

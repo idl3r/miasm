@@ -1,6 +1,6 @@
 #! /usr/bin/env python2
 #-*- coding:utf-8 -*-
-
+from __future__ import print_function
 from argparse import ArgumentParser
 from miasm.analysis import debugging
 from miasm.jitter.csts import *

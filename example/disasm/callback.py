@@ -1,4 +1,4 @@
-
+from __future__ import print_function
 from miasm.analysis.binary import Container
 from miasm.analysis.machine import Machine
 from miasm.core.asmblock import AsmConstraint

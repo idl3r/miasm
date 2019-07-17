@@ -3,7 +3,7 @@
 
 # Loosely based on ARM's sem.py
 
-
+from __future__ import print_function
 from builtins import range
 
 from future.utils import viewitems

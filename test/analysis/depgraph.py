@@ -1,5 +1,5 @@
 """Regression test module for DependencyGraph"""
-
+from __future__ import print_function
 
 from future.utils import viewitems
 

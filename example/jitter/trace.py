@@ -6,7 +6,7 @@ This example demonstrates two instrumentation possibility:
 Note: for better performance, one can also extend Codegen to produce
 instrumentation at the C / LLVM level
 """
-
+from __future__ import print_function
 
 import os
 import time

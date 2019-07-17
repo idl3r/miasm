@@ -1,4 +1,4 @@
-
+from __future__ import print_function
 from builtins import map
 import idaapi
 from idc import *

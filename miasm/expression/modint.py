@@ -248,7 +248,7 @@ def define_uint(size):
 
 def define_common_int():
     "Define common int"
-    common_int = list(range(1, 257))
+    common_int = range(1, 257)
 
     for i in common_int:
         define_int(i)

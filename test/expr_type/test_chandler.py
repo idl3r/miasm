@@ -4,7 +4,7 @@ Regression test for objc
 * C Miasm expression to native expression
 * Miasm expression to type
 """
-
+from __future__ import print_function
 
 from future.utils import viewitems
 from past.builtins import cmp

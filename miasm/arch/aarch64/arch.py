@@ -1134,11 +1134,11 @@ class bits(object):
 
     def __str__(self):
         return "'%s'" % "".join('1' if self.value & (1 << i) else '0'
-                                for i in reversed(list(range(self.size))))
+                                for i in reversed(range(self.size)))
 
 # From J1-6035
 def HighestSetBit(x):
-    for i in reversed(list(range(x.size))):
+    for i in reversed(range(x.size)):
         if x.value & (1 << i):
             return i
     return - 1

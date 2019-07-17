@@ -1,4 +1,4 @@
-
+from __future__ import print_function
 #
 # Copyright (C) 2011 EADS France, Fabrice Desclaux <fabrice.desclaux@eads.net>
 #
