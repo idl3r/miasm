@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 from miasm.arch.x86.arch import mn_x86
 from miasm.arch.x86.regs import EDX
 from miasm.core.locationdb import LocationDB

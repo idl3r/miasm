@@ -17,7 +17,7 @@ Global overview:
    - Ask the DSE for new candidates, according to its strategy, ie. finding new
 block / branch / path
 """
-from __future__ import print_function
+
 from argparse import ArgumentParser
 
 from future.utils import viewitems

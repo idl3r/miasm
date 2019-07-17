@@ -1,7 +1,7 @@
 # Toshiba MeP-c4 - unit tests helpers
 # Guillaume Valadon <guillaume@valadon.net>
 
-from __future__ import print_function
+
 
 from builtins import range
 

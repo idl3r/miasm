@@ -40,7 +40,7 @@ assert list(assignblk1) == [id_a]
 assert dict(assignblk1) == {id_a: id_b}
 assert assignblk1[id_a] == id_b
 assert list(viewitems(assignblk1)) == list(viewitems(assignblk1))
-assert set(assignblk1.iteritems()) == set(assignblk1.items())
+assert set(assignblk1.items()) == set(assignblk1.items())
 
 ## Simplify
 assignblk3 = AssignBlock({id_a: id_b - id_b})

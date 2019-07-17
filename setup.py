@@ -1,6 +1,6 @@
 #! /usr/bin/env python2
 
-from __future__ import print_function
+
 from distutils.core import setup, Extension
 from distutils.util import get_platform
 from distutils.sysconfig import get_python_lib, get_config_vars

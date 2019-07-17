@@ -101,7 +101,7 @@ class jitter_arml(Jitter):
     def func_prepare_stdcall(self, ret_addr, *args):
         for index in range(min(len(args), 4)):
             setattr(self.cpu, 'R%d' % index, args[index])
-        for index in reversed(range(4, len(args))):
+        for index in reversed(list(range(4, len(args)))):
             self.push_uint32_t(args[index])
         self.cpu.LR = ret_addr
 

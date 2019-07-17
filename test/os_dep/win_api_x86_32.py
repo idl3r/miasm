@@ -64,7 +64,7 @@ class TestWinAPI(unittest.TestCase):
         jit.push_uint32_t(0) # ret_ad
         winapi.msvcrt_swprintf(jit)
         ret = jit.get_str_unic(buf)
-        self.assertEqual(ret, u"'coucou' 1111")
+        self.assertEqual(ret, "'coucou' 1111")
 
 
     def test_msvcrt_realloc(self):

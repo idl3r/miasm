@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 from builtins import range
 import logging
 from collections import MutableMapping
@@ -594,7 +594,7 @@ class MemSparse(object):
 
     def items(self):
         """Return stored memory variables and their values."""
-        return list(self.iteritems())
+        return list(self.items())
 
     def dump(self):
         """Display MemSparse content"""
@@ -712,10 +712,10 @@ class SymbolMngr(object):
 
     def items(self):
         """Return variables/values of the current state"""
-        return list(self.iteritems())
+        return list(self.items())
 
     def __iter__(self):
-        for expr, _ in self.iteritems():
+        for expr, _ in self.items():
             yield expr
 
     def ids(self):

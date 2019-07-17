@@ -159,7 +159,7 @@ def indent(s, size=4):
 # String generic getter/setter/len-er
 # TODO: make miasm.os_dep.common and jitter ones use these ones
 
-def get_str(vm, addr, enc, max_char=None, end=u'\x00'):
+def get_str(vm, addr, enc, max_char=None, end='\x00'):
     """Get a @end (by default '\\x00') terminated @enc encoded string from a
     VmMngr.
 
@@ -192,7 +192,7 @@ def get_str(vm, addr, enc, max_char=None, end=u'\x00'):
         i += step
     return b''.join(s).decode(enc)
 
-def raw_str(s, enc, end=u'\x00'):
+def raw_str(s, enc, end='\x00'):
     """Returns a string representing @s as an @end (by default \\x00)
     terminated @enc encoded string.
 
@@ -203,7 +203,7 @@ def raw_str(s, enc, end=u'\x00'):
     """
     return (s + end).encode(enc)
 
-def set_str(vm, addr, s, enc, end=u'\x00'):
+def set_str(vm, addr, s, enc, end='\x00'):
     """Encode a string to an @end (by default \\x00) terminated @enc encoded
     string and set it in a VmMngr memory.
 
@@ -217,7 +217,7 @@ def set_str(vm, addr, s, enc, end=u'\x00'):
     s = raw_str(s, enc, end=end)
     vm.set_mem(addr, s)
 
-def raw_len(py_unic_str, enc, end=u'\x00'):
+def raw_len(py_unic_str, enc, end='\x00'):
     """Returns the length in bytes of @py_unic_str in memory (once @end has been
     added and the full str has been encoded). It returns exactly the room
     necessary to call set_str with similar arguments.
@@ -229,7 +229,7 @@ def raw_len(py_unic_str, enc, end=u'\x00'):
     """
     return len(raw_str(py_unic_str, enc))
 
-def enc_triplet(enc, max_char=None, end=u'\x00'):
+def enc_triplet(enc, max_char=None, end='\x00'):
     """Returns a triplet of functions (get_str_enc, set_str_enc, raw_len_enc)
     for a given encoding (as needed by Str to add an encoding). The prototypes
     are:
@@ -830,9 +830,9 @@ class Array(Type):
         """
         if isinstance(idx, slice):
             idx = self._normalize_slice(idx)
-            if len(item) != len(range(idx.start, idx.stop, idx.step)):
+            if len(item) != len(list(range(idx.start, idx.stop, idx.step))):
                 raise ValueError("Mismatched lengths in slice assignment")
-            for i, val in zip(range(idx.start, idx.stop, idx.step),
+            for i, val in zip(list(range(idx.start, idx.stop, idx.step)),
                                          item):
                 self.field_type.set(vm, addr + self.get_offset(i), val)
         else:

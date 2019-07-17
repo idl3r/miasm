@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 
-from __future__ import print_function
+
 from future.builtins import map, range
 
 from miasm.core.utils import decode_hex, encode_hex, int_to_byte
